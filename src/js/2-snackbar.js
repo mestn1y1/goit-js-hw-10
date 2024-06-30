@@ -5,7 +5,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const delay = parseInt(document.querySelector('.input-delay').value);
+  const delay = parseInt(document.querySelector('.input[name="delay"]').value);
   const state = document.querySelector('input[name="state"]:checked').value;
 
   const delayPromise = new Promise((resolve, reject) => {
